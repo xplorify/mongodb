@@ -1,0 +1,17 @@
+docker run -d \
+		-p 1212:27017 \
+		-p 1312:28017 \
+		-e AUTH=no \
+		-e MONGODB_DATABASE="admin" \
+		-e MONGODB_USER="gjovanov" \
+		-e MONGODB_PASS="Xc0nnected" \
+                -v /var/lib/mongodb:/var/lib/mongodb \
+		xplorify/mongodb
+
+curl --user gjovanov:Xc0nnected --digest http://localhost:1312/
+
+mongo admin -u gjovanov -p Xc0nnected --host localhost --port 1212
+
+
+/data/analytics_db
+
