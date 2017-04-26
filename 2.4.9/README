@@ -1,12 +1,12 @@
 docker run -d \
-		-p 1212:27017 \
-		-p 1312:28017 \
+		-p 1012:27017 \
+		-p 1112:28017 \
 		-e AUTH=no \
 		-e MONGODB_DATABASE="admin" \
 		-e MONGODB_USER="your_username" \
 		-e MONGODB_PASS="your_password" \
                 -v /var/lib/mongodb:/var/lib/mongodb \
-		xplorify/mongodb
+		xplorify/mongodb:2.4.9
 
 curl --user your_username:your_password --digest http://localhost:1312/
 

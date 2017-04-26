@@ -5,7 +5,7 @@ MAINTAINER Goran Jovanov <goran.jovanov@gmail.com>
 ENV AUTH yes
 ENV JOURNALING yes
 
-VOLUME /data/analytics_db
+VOLUME /data/analytics_db /data/db
 
 ADD scripts/* /
 

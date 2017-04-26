@@ -6,7 +6,7 @@ docker run -d \
 		-e MONGODB_USER="your_username" \
 		-e MONGODB_PASS="you_password" \
                 -v /data/db \
-		xplorify/mongodb
+		xplorify/mongodb:3.4
 
 curl --user your_username:your_password --digest http://localhost:1312/
 
