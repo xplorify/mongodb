@@ -8,6 +8,6 @@ docker run -d \
                 -v /var/lib/mongodb:/var/lib/mongodb \
 		xplorify/mongodb:2.4.9
 
-curl --user your_username:your_password --digest http://localhost:1312/
+curl --user your_username:your_password --digest http://localhost:1112/
 
-mongo admin -u your_username -p your_password --host localhost --port 1212
+mongo admin -u your_username -p your_password --host localhost --port 1012
