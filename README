@@ -1,0 +1,5 @@
+Simple MongoDB docker files
+
+Mongodb versions:
+- 2.4.9
+- 3.4
